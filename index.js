@@ -23,7 +23,7 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.use("/public", express.static(path.join(__dirname, "public")));
+app.use("/myvideos", express.static(path.join(__dirname, "myvideos")));
 app.use("/", router)
 
 

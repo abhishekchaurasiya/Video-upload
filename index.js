@@ -28,7 +28,7 @@ app.use("/", router)
 
 
 app.get("/", (req, res) => {
-    res.sendFile(`${__dirname}/index.html`)
+    res.send("Server is started.")
 })
 
 
